@@ -374,8 +374,7 @@ async def classify_grounding(file: UploadFile = File(...)):
                 if detections:
                     best = max(detections, key=lambda x: x["confidence"])
                     min_confidence = 0.35
-                    mapped_category = category_map.get(best["label"], "Unknown")
-
+                    mapped_category = CATEGORY_MAP.get(best["label"], "Unknown")
                     if (
                         best["confidence"] >= min_confidence
                         and mapped_category != "Unknown"
