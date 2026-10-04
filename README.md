@@ -28,7 +28,7 @@ cp .env.example .env
 uvicorn main:app --reload
 ```
 
-On Windows, activate with `.venv\\Scripts\\activate`. Configure the IBM settings described in [.env.example](.env.example). The PCB route additionally reads `ROBOFLOW_API_KEY`; the grounding route reads `DDS_API_TOKEN`.
+On Windows, activate with `.venv\Scripts\activate`. Configure the IBM settings described in [.env.example](.env.example). The PCB route additionally reads `ROBOFLOW_API_KEY`; the grounding route reads `DDS_API_TOKEN`.
 
 Interactive API documentation: `http://127.0.0.1:8000/docs`.
 
